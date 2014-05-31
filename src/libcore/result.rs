@@ -438,7 +438,7 @@ impl<T, E> Result<T, E> {
     ///     sum += val.ok().unwrap_or(0);
     /// }
     ///
-    /// assert!(sum == 10);
+    /// assert!(sum == 11);
     /// ~~~
     #[inline]
     pub fn map<U>(self, op: |T| -> U) -> Result<U,E> {
